@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524B41A415A4067E0049CF24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41A315A4067E0049CF24 /* main.cpp */; };
+		524B41D015A406AC0049CF24 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41AD15A406AB0049CF24 /* Camera.cpp */; };
+		524B41D115A406AC0049CF24 /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41AF15A406AB0049CF24 /* GameEngine.cpp */; };
+		524B41D215A406AC0049CF24 /* ImageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41B115A406AB0049CF24 /* ImageManager.cpp */; };
+		524B41D315A406AC0049CF24 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41BC15A406AB0049CF24 /* Character.cpp */; };
+		524B41D415A406AC0049CF24 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41BE15A406AB0049CF24 /* Level.cpp */; };
+		524B41D515A406AC0049CF24 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41C015A406AB0049CF24 /* Map.cpp */; };
+		524B41D615A406AC0049CF24 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41C215A406AB0049CF24 /* Tile.cpp */; };
+		524B41D715A406AC0049CF24 /* prng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524B41C615A406AB0049CF24 /* prng.cpp */; };
+		524B41D915A406C40049CF24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524B41D815A406C40049CF24 /* OpenGL.framework */; };
+		524B41E015A406D70049CF24 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524B41DA15A406D70049CF24 /* SFML.framework */; };
+		524B41E115A406D70049CF24 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524B41DB15A406D70049CF24 /* sfml-window.framework */; };
+		524B41E215A406D70049CF24 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524B41DC15A406D70049CF24 /* sfml-system.framework */; };
+		524B41E315A406D70049CF24 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524B41DD15A406D70049CF24 /* sfml-network.framework */; };
+		524B41E415A406D70049CF24 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524B41DE15A406D70049CF24 /* sfml-graphics.framework */; };
+		524B41E515A406D70049CF24 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524B41DF15A406D70049CF24 /* sfml-audio.framework */; };
+		524B41E615A407780049CF24 /* Arial.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 524B41CA15A406AB0049CF24 /* Arial.ttf */; };
+		524B41E715A407780049CF24 /* spelunker.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 524B41CC15A406AB0049CF24 /* spelunker.png */; };
+		524B41E815A407780049CF24 /* empty.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 524B41CE15A406AB0049CF24 /* empty.png */; };
+		524B41E915A407780049CF24 /* wood.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 524B41CF15A406AB0049CF24 /* wood.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		524B419D15A4067D0049CF24 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				524B41E615A407780049CF24 /* Arial.ttf in CopyFiles */,
+				524B41E715A407780049CF24 /* spelunker.png in CopyFiles */,
+				524B41E815A407780049CF24 /* empty.png in CopyFiles */,
+				524B41E915A407780049CF24 /* wood.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		524B419F15A4067E0049CF24 /* sfml-tile-engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sfml-tile-engine"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524B41A315A4067E0049CF24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		524B41A515A4067E0049CF24 /* sfml_tile_engine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = sfml_tile_engine.1; sourceTree = "<group>"; };
+		524B41AD15A406AB0049CF24 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		524B41AE15A406AB0049CF24 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		524B41AF15A406AB0049CF24 /* GameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEngine.cpp; sourceTree = "<group>"; };
+		524B41B015A406AB0049CF24 /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
+		524B41B115A406AB0049CF24 /* ImageManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageManager.cpp; sourceTree = "<group>"; };
+		524B41B215A406AB0049CF24 /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		524B41B515A406AB0049CF24 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		524B41B615A406AB0049CF24 /* manual.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = manual.html; sourceTree = "<group>"; };
+		524B41B715A406AB0049CF24 /* rapidxml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
+		524B41B815A406AB0049CF24 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
+		524B41B915A406AB0049CF24 /* rapidxml_print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
+		524B41BA15A406AB0049CF24 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
+		524B41BC15A406AB0049CF24 /* Character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Character.cpp; sourceTree = "<group>"; };
+		524B41BD15A406AB0049CF24 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		524B41BE15A406AB0049CF24 /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
+		524B41BF15A406AB0049CF24 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		524B41C015A406AB0049CF24 /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		524B41C115A406AB0049CF24 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		524B41C215A406AB0049CF24 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		524B41C315A406AB0049CF24 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		524B41C415A406AB0049CF24 /* GlobalDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefines.h; sourceTree = "<group>"; };
+		524B41C615A406AB0049CF24 /* prng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prng.cpp; sourceTree = "<group>"; };
+		524B41C715A406AB0049CF24 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		524B41CA15A406AB0049CF24 /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arial.ttf; sourceTree = "<group>"; };
+		524B41CB15A406AB0049CF24 /* spelunker-tga.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "spelunker-tga.tga"; sourceTree = "<group>"; };
+		524B41CC15A406AB0049CF24 /* spelunker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spelunker.png; sourceTree = "<group>"; };
+		524B41CE15A406AB0049CF24 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		524B41CF15A406AB0049CF24 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
+		524B41D815A406C40049CF24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		524B41DA15A406D70049CF24 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = ../../../../../../../Library/Frameworks/SFML.framework; sourceTree = "<group>"; };
+		524B41DB15A406D70049CF24 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../../../../../../Library/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		524B41DC15A406D70049CF24 /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../../../../../../Library/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		524B41DD15A406D70049CF24 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+		524B41DE15A406D70049CF24 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		524B41DF15A406D70049CF24 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		524B419C15A4067D0049CF24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524B41E015A406D70049CF24 /* SFML.framework in Frameworks */,
+				524B41E115A406D70049CF24 /* sfml-window.framework in Frameworks */,
+				524B41E215A406D70049CF24 /* sfml-system.framework in Frameworks */,
+				524B41E315A406D70049CF24 /* sfml-network.framework in Frameworks */,
+				524B41E415A406D70049CF24 /* sfml-graphics.framework in Frameworks */,
+				524B41E515A406D70049CF24 /* sfml-audio.framework in Frameworks */,
+				524B41D915A406C40049CF24 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		524B419415A4067D0049CF24 = {
+			isa = PBXGroup;
+			children = (
+				524B41DA15A406D70049CF24 /* SFML.framework */,
+				524B41DB15A406D70049CF24 /* sfml-window.framework */,
+				524B41DC15A406D70049CF24 /* sfml-system.framework */,
+				524B41DD15A406D70049CF24 /* sfml-network.framework */,
+				524B41DE15A406D70049CF24 /* sfml-graphics.framework */,
+				524B41DF15A406D70049CF24 /* sfml-audio.framework */,
+				524B41D815A406C40049CF24 /* OpenGL.framework */,
+				524B41AB15A406AB0049CF24 /* src */,
+				524B41C815A406AB0049CF24 /* data */,
+				524B41C915A406AB0049CF24 /* art */,
+				524B41A215A4067E0049CF24 /* sfml-tile-engine */,
+				524B41A015A4067E0049CF24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		524B41A015A4067E0049CF24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524B419F15A4067E0049CF24 /* sfml-tile-engine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		524B41A215A4067E0049CF24 /* sfml-tile-engine */ = {
+			isa = PBXGroup;
+			children = (
+				524B41A315A4067E0049CF24 /* main.cpp */,
+				524B41A515A4067E0049CF24 /* sfml_tile_engine.1 */,
+			);
+			path = "sfml-tile-engine";
+			sourceTree = "<group>";
+		};
+		524B41AB15A406AB0049CF24 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				524B41AC15A406AB0049CF24 /* engine */,
+				524B41B315A406AB0049CF24 /* external */,
+				524B41BB15A406AB0049CF24 /* gameObjects */,
+				524B41C415A406AB0049CF24 /* GlobalDefines.h */,
+				524B41C515A406AB0049CF24 /* utils */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		524B41AC15A406AB0049CF24 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				524B41AD15A406AB0049CF24 /* Camera.cpp */,
+				524B41AE15A406AB0049CF24 /* Camera.h */,
+				524B41AF15A406AB0049CF24 /* GameEngine.cpp */,
+				524B41B015A406AB0049CF24 /* GameEngine.h */,
+				524B41B115A406AB0049CF24 /* ImageManager.cpp */,
+				524B41B215A406AB0049CF24 /* ImageManager.h */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		524B41B315A406AB0049CF24 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				524B41B415A406AB0049CF24 /* rapidxml-1.13 */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		524B41B415A406AB0049CF24 /* rapidxml-1.13 */ = {
+			isa = PBXGroup;
+			children = (
+				524B41B515A406AB0049CF24 /* license.txt */,
+				524B41B615A406AB0049CF24 /* manual.html */,
+				524B41B715A406AB0049CF24 /* rapidxml.hpp */,
+				524B41B815A406AB0049CF24 /* rapidxml_iterators.hpp */,
+				524B41B915A406AB0049CF24 /* rapidxml_print.hpp */,
+				524B41BA15A406AB0049CF24 /* rapidxml_utils.hpp */,
+			);
+			path = "rapidxml-1.13";
+			sourceTree = "<group>";
+		};
+		524B41BB15A406AB0049CF24 /* gameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				524B41BC15A406AB0049CF24 /* Character.cpp */,
+				524B41BD15A406AB0049CF24 /* Character.h */,
+				524B41BE15A406AB0049CF24 /* Level.cpp */,
+				524B41BF15A406AB0049CF24 /* Level.h */,
+				524B41C015A406AB0049CF24 /* Map.cpp */,
+				524B41C115A406AB0049CF24 /* Map.h */,
+				524B41C215A406AB0049CF24 /* Tile.cpp */,
+				524B41C315A406AB0049CF24 /* Tile.h */,
+			);
+			path = gameObjects;
+			sourceTree = "<group>";
+		};
+		524B41C515A406AB0049CF24 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				524B41C615A406AB0049CF24 /* prng.cpp */,
+				524B41C715A406AB0049CF24 /* prng.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		524B41C815A406AB0049CF24 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		524B41C915A406AB0049CF24 /* art */ = {
+			isa = PBXGroup;
+			children = (
+				524B41CA15A406AB0049CF24 /* Arial.ttf */,
+				524B41CB15A406AB0049CF24 /* spelunker-tga.tga */,
+				524B41CC15A406AB0049CF24 /* spelunker.png */,
+				524B41CD15A406AB0049CF24 /* tiles */,
+			);
+			path = art;
+			sourceTree = "<group>";
+		};
+		524B41CD15A406AB0049CF24 /* tiles */ = {
+			isa = PBXGroup;
+			children = (
+				524B41CE15A406AB0049CF24 /* empty.png */,
+				524B41CF15A406AB0049CF24 /* wood.png */,
+			);
+			path = tiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		524B419E15A4067D0049CF24 /* sfml-tile-engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524B41A815A4067E0049CF24 /* Build configuration list for PBXNativeTarget "sfml-tile-engine" */;
+			buildPhases = (
+				524B419B15A4067D0049CF24 /* Sources */,
+				524B419C15A4067D0049CF24 /* Frameworks */,
+				524B419D15A4067D0049CF24 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sfml-tile-engine";
+			productName = "sfml-tile-engine";
+			productReference = 524B419F15A4067E0049CF24 /* sfml-tile-engine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		524B419615A4067D0049CF24 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 524B419915A4067D0049CF24 /* Build configuration list for PBXProject "sfml-tile-engine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 524B419415A4067D0049CF24;
+			productRefGroup = 524B41A015A4067E0049CF24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				524B419E15A4067D0049CF24 /* sfml-tile-engine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		524B419B15A4067D0049CF24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524B41A415A4067E0049CF24 /* main.cpp in Sources */,
+				524B41D015A406AC0049CF24 /* Camera.cpp in Sources */,
+				524B41D115A406AC0049CF24 /* GameEngine.cpp in Sources */,
+				524B41D215A406AC0049CF24 /* ImageManager.cpp in Sources */,
+				524B41D315A406AC0049CF24 /* Character.cpp in Sources */,
+				524B41D415A406AC0049CF24 /* Level.cpp in Sources */,
+				524B41D515A406AC0049CF24 /* Map.cpp in Sources */,
+				524B41D615A406AC0049CF24 /* Tile.cpp in Sources */,
+				524B41D715A406AC0049CF24 /* prng.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		524B41A615A4067E0049CF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		524B41A715A4067E0049CF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		524B41A915A4067E0049CF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		524B41AA15A4067E0049CF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		524B419915A4067D0049CF24 /* Build configuration list for PBXProject "sfml-tile-engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524B41A615A4067E0049CF24 /* Debug */,
+				524B41A715A4067E0049CF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524B41A815A4067E0049CF24 /* Build configuration list for PBXNativeTarget "sfml-tile-engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524B41A915A4067E0049CF24 /* Debug */,
+				524B41AA15A4067E0049CF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 524B419615A4067D0049CF24 /* Project object */;
+}
