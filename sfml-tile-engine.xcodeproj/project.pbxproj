@@ -84,6 +84,7 @@
 		524B41DD15A406D70049CF24 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
 		524B41DE15A406D70049CF24 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
 		524B41DF15A406D70049CF24 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		524B41EA15A40A130049CF24 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +108,7 @@
 		524B419415A4067D0049CF24 = {
 			isa = PBXGroup;
 			children = (
+				524B41EA15A40A130049CF24 /* README */,
 				524B41DA15A406D70049CF24 /* SFML.framework */,
 				524B41DB15A406D70049CF24 /* sfml-window.framework */,
 				524B41DC15A406D70049CF24 /* sfml-system.framework */,
