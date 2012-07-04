@@ -1,0 +1,10 @@
+Here's a simple example of using SFML 2 as a basic tile engine.  You can click to pan the camera, or use the arrow keys to pan as well.  A nice start to a tile-based project.
+
+Using the SFML 2 library (http://www.sfml-dev.org/).
+
+Based on RevTorA's excellent tutorial on dreamincode.net's forums:
+* Part 1/4 - http://www.dreamincode.net/forums/topic/230524-c-tile-engine-from-scratch-part-1/
+* Part 2/4 - http://www.dreamincode.net/forums/topic/230525-c-tile-engine-from-scratch-part-2/
+* Part 3/4 - http://www.dreamincode.net/forums/topic/231078-c-tile-engine-from-scratch-part-3/
+* Part 4/4 - http://www.dreamincode.net/forums/topic/232396-c-tile-engine-from-scratch-part-4/
+
