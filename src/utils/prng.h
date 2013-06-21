@@ -1,7 +1,7 @@
 //
 //  prng.h
 //  sfml-2-bitch
-//
+//  
 //  Created by Minah Matuszewski on 6/29/12.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
